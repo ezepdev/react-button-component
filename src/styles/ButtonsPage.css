@@ -3,3 +3,11 @@
 .buttons_container {
     margin: 4%;
 }
+
+.col {
+    display: flex;
+}
+
+.col > div {
+    flex-basis: 25vw;
+}

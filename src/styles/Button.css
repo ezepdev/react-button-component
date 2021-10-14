@@ -1,5 +1,5 @@
 :root {
-    --blue:#3D5AFE 
+    --blue:#3D5AFE
 }
 
 .button {
@@ -8,16 +8,34 @@
     height: 2em;
     border: 0;
     border-radius: 6px;
+    font-weight: 500;
+}
+
+.default {
+
+}
+.button:hover {
+    cursor:pointer;
+}
+
+.default:disabled {
+    background-color:#bbb;
+    color: #555
 }
 
 .outline {
     border:1px solid var(--blue);
     color:var(--blue);
+    background: transparent;
 }
 
 .text {
     background: transparent;
     color:var(--blue);
+}
+
+.text:disabled {
+    color:red
 }
 
 .disabledShadow {

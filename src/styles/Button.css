@@ -2,21 +2,25 @@
     --blue:#3D5AFE
 }
 
+
 .button {
-    display: block;
-    width: 6em;
-    height: 2em;
+    display: flex;
+    justify-content: space-around;
     border: 0;
     border-radius: 6px;
     font-weight: 500;
+    padding: .8em 2em;
 }
 
-.default {
-
-}
 .button:hover {
     cursor:pointer;
 }
+
+.button span {
+    margin: 0 .4em;
+    font-size: 18px;
+}
+
 
 .default:disabled {
     background-color:#bbb;

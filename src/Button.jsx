@@ -3,9 +3,11 @@ import './styles/Button.css'
 
 
 function Button({ children, 
-    variant = "default", 
+    variant, 
     disabledShadow = false, 
-    disabled, 
+    disabled,
+    startIcon,
+    endIcon ,
     color }
     ) {
     
@@ -23,8 +25,22 @@ function Button({ children,
 
     return (
         <button disabled={disabled} className={`button ${styles.join(' ')}`} >
-            { children }    
+
+                            
+            {startIcon ? 
+                    <span class="material-icons">
+                            { startIcon }
+                    </span> : null
+            }
+            { children }
+            {endIcon ? 
+                <span class="material-icons">
+                        { endIcon }
+                </span> : null
+            }
+            
         </button>
+        
     )
 }
 

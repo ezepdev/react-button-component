@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.col div {
+    margin-right: 2em;
+}
+
 .col > div {
     flex-basis: 25vw;
 }

@@ -43,16 +43,16 @@ function ButtonsPage() {
                 />
                 <div className="col">
                     <ButtonShow 
-                        label='<Button disabledShadow />'
+                        label='<Button disabled />'
                         button={
                             <Button disabled >
                                 Disabled
                             </Button>}
                     />
                     <ButtonShow 
-                        label='<Button variant="outline" disabled />'
+                        label='<Button variant="text" disabled />'
                         button={
-                            <Button variant='outline' disabled >
+                            <Button variant='text' disabled >
                                 Disabled
                             </Button>}
                     />
@@ -71,6 +71,74 @@ function ButtonsPage() {
                             <Button endIcon="local_grocery_store" >
                                 Default
                             </Button>}
+                    />
+                </div>
+                <div className="col">
+                    <ButtonShow 
+                        label='<Button size="sm" />'
+                        button={
+                            <Button size="sm">
+                                Default    
+                            </Button>}
+                    />
+                    <ButtonShow 
+                        label='<Button size="md" />'
+                        button={
+                            <Button size="md" >
+                                Default
+                            </Button>}
+                    />
+                    <ButtonShow 
+                        label='<Button size="lg" />'
+                        button={
+                            <Button size="lg" >
+                                Default
+                            </Button>
+                        }
+                    />
+                </div>
+                <div className="col">
+                    <ButtonShow 
+                        label='<Button color="primary" />'
+                        button={
+                            <Button color="primary" >
+                                Default    
+                            </Button>}
+                    />
+                    <ButtonShow 
+                        label='<Button color="secondary" />'
+                        button={
+                            <Button color="secondary" >
+                                Default
+                            </Button>}
+                    />
+                    <ButtonShow 
+                        label='<Button color="danger" />'
+                        button={
+                            <Button color="danger" >
+                                Default
+                            </Button>
+                        }
+                    />
+                </div>
+                
+                    
+                <div className="col">
+                <ButtonShow 
+                        label='<Button color="primary" variant="outline" />'
+                        button={
+                            <Button color="primary" variant="outline">
+                                Default
+                            </Button>
+                        }
+                    />
+                    <ButtonShow 
+                        label='<Button color="secondary" variant="text" />'
+                        button={
+                            <Button color="secondary" variant="text">
+                                Default
+                            </Button>
+                        }
                     />
                 </div>
             </div>

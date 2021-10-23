@@ -8,12 +8,15 @@ function Button({ children,
     disabled,
     startIcon,
     endIcon ,
-    color }
+    color ,
+    size = "md"
+    
+    }
     ) {
     
     const [styles,setStyles] = useState(
         [
-            variant, color
+            variant, color, size
         ]
     )
         
@@ -25,20 +28,21 @@ function Button({ children,
 
     return (
         <button disabled={disabled} className={`button ${styles.join(' ')}`} >
-
-                            
-            {startIcon ? 
+                
+            { startIcon ? 
                     <span class="material-icons">
                             { startIcon }
                     </span> : null
             }
+            
             { children }
-            {endIcon ? 
+            
+            { endIcon ? 
                 <span class="material-icons">
                         { endIcon }
                 </span> : null
             }
-            
+
         </button>
         
     )

@@ -1,48 +1,84 @@
+
+/* Main */
+
 :root {
-    --blue:#3D5AFE
+    box-sizing:border-box;
+    --color-principal:#A5A5A5;
+    --color-secondary: WHITE;
 }
 
+.primary {
+    --color-principal:#3D5AFE;
+    --color-secondary: white;
+}
+
+.secondary {
+    --color-principal:#455A64;
+    --color-secondary: white;
+
+}
+
+.danger {
+    --color-principal: #D32F2F;
+    --color-secondary: white;
+
+}
 
 .button {
     display: flex;
     justify-content: space-around;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 6px;
     font-weight: 500;
-    padding: .8em 2em;
+    padding: .5em 1.3em;
+    background-color: var(--color-principal);
+    color: var(--color-secondary);
 }
+
+/* Sizes */
+
+.sm {
+    width: 25%;
+}
+
+.md {
+    width: 50%;
+    max-width: 10em;
+}
+
+.lg {
+    width: 75%;
+}
+
 
 .button:hover {
     cursor:pointer;
 }
 
 .button span {
-    margin: 0 .4em;
-    font-size: 18px;
+    margin: 0 .3em;
+    font-size: 18px;    
 }
 
-
-.default:disabled {
-    background-color:#bbb;
-    color: #555
+.button:disabled {
+    background-color: #E0E0E0;
+    color: #9E9E9E;
 }
 
 .outline {
-    border:1px solid var(--blue);
-    color:var(--blue);
     background: transparent;
+    color:var(--color-principal);
+    border:1px solid var(--color-principal);
 }
 
 .text {
+    color: var(--color-principal);
     background: transparent;
-    color:var(--blue);
 }
 
 .text:disabled {
-    color:red
+    background: transparent;
+    color: #CCC
 }
+/* TODO: agregar los disabled styles para las otras variantes */
 
-.disabledShadow {
-    background: var(--blue);
-    color:#fff
-}

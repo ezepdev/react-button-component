@@ -6,8 +6,9 @@
 }
 
 
-.button:hover {
+.button:hover ,.button:focus{
     cursor:pointer;
+    outline: none;
 }
 
 .default {
@@ -16,7 +17,7 @@
 }
 
 
-.default:hover {
+.default:hover,.default:focus {
     --color-principal:#A5A5A5;
     --color-secondary: WHITE;
 }
@@ -26,7 +27,7 @@
     --color-secondary: white;
 }
 
-.primary:hover {
+.primary:hover, .primary:focus {
     --color-principal:#0039CB;
     --color-secondary: white;
 }
@@ -39,7 +40,7 @@
 }
 
 
-.secondary:hover {
+.secondary:hover, .secondary:focus {
     --color-principal:#1C313A;
 }
 
@@ -48,7 +49,7 @@
     --color-secondary: white;
 
 }
-.danger:hover {
+.danger:hover,.danger:focus {
     --color-principal: #9A0007;
 }
 

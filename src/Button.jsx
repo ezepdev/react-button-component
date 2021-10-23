@@ -8,7 +8,7 @@ function Button({ children,
     disabled,
     startIcon,
     endIcon ,
-    color ,
+    color = "default" ,
     size = "md"
     
     }

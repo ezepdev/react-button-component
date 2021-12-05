@@ -7,7 +7,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://desolate-thicket-06955.herokuapp.com/">
+    <a href="https://button-component-22345.herokuapp.com/">
       Demo
     </a>
   </h3>

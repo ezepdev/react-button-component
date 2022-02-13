@@ -1,0 +1,13 @@
+@import url("./normalize.css");
+
+.buttons_container {
+  margin: 5%;
+}
+
+.col {
+  display: flex;
+}
+
+.col > div {
+  flex-basis: 50vw;
+}

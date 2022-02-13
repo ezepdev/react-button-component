@@ -1,0 +1,12 @@
+.label {
+  color: #999;
+}
+
+.button_show_container {
+  width: 100%;
+}
+
+.button_container {
+  width: 100%;
+  max-width: 50vw;
+}

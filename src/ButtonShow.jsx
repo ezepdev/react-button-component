@@ -1,13 +1,13 @@
-import React from 'react'
-import './styles/ButtonShow.css'
+import React from "react";
+import "./ButtonShow.css";
 
-function ButtonShow({label,button}) {
-    return (
-        <div>
-            <p className="button_show_label">{label}</p>
-            {button}  
-        </div>
-    )
+function ButtonShow({ label, button }) {
+  return (
+    <div>
+      <p className="label">{label}</p>
+      <div className="button_container">{button}</div>
+    </div>
+  );
 }
 
-export default ButtonShow
+export default ButtonShow;

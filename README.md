@@ -22,13 +22,15 @@
 
 - [React](https://reactjs.org/)
 
-# Getting Started with Create React App
+# Getting Started 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the project directory, first install the project with:
+
+### `yarn` or `npm install`
+
+then execute : 
 
 ## Available Scripts
-
-In the project directory, you can run:
 
 ### `yarn start`
 

@@ -9,7 +9,7 @@ const sizes = {
 const default_color = {
   fg: "white",
   hover_bg: "#191A19",
-  bg: "#393737",
+  bg: "#929292",
   hover_fg: "white",
 };
 
@@ -52,8 +52,12 @@ export const OutlineStyledButton = styled(DefaultStyledButton)`
 
   &:not([disabled]):hover {
     cursor: pointer;
-    color: ${({ color = default_color }) => color["hover_fg"]};
-    background-color: ${({ color = default_color }) => color["hober_bg"]};
+    background-color: transparent;
+    border: 1px solid
+    ${({ color = default_color }) => {
+    return color["hover_bg"];
+  }};
+    color: ${({ color = default_color }) => color["hover_bg"]};
   }
 `;
 
@@ -62,10 +66,9 @@ export const TextStyledButton = styled(DefaultStyledButton)`
     return color["bg"];
   }};
   background-color: transparent;
-  border: none;
   &:not([disabled]):hover {
     cursor: pointer;
-    color: ${({ color = default_color }) => color["hover_fg"]};
-    background-color: ${({ color = default_color }) => color["hober_bg"]};
+    color: ${({ color = default_color }) => color["hover_bg"]};
+    background-color: transparent;
   }
 `;

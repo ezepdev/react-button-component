@@ -3,7 +3,7 @@ import "./ButtonShow.css";
 
 function ButtonShow({ label, button }) {
   return (
-    <div>
+    <div className="button_show_container">
       <p className="label">{label}</p>
       <div className="button_container">{button}</div>
     </div>

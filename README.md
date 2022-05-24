@@ -19,14 +19,12 @@ Para realizar el proyecto utilize la libreria de React JS y se le dieron estilos
 - [React](https://reactjs.org/)
 - [Styled-components](https://styled-components.com/)
 
-# Para darle un vistazo al proyecto:
+# Para darle un vistazo al proyecto: 
 
-1 - Descarga el proyecto o clonalo con el comando:
-
+1 - Descarga el proyecto o clonalo con el comando: 
 ### `git clone https://github.com/ezepdev/react-button-component `
 
 2 - Una vez descargado, entra en la carpeta raiz del proyecto e instalalo con el comando :
-
 ### `yarn` or `npm install`
 
 3- Por ultimo ejecuta alguno de los siguientes scripts :
@@ -36,6 +34,7 @@ Para realizar el proyecto utilize la libreria de React JS y se le dieron estilos
 ### `yarn start` or `npm start`
 
 Ejecuta la aplicacion en modo desarrollo:
+
 Abre [http://localhost:3000](http://localhost:3000) para verlo en el navegador.
 
 ### `yarn build` or `npm run build`

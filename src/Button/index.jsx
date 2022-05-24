@@ -3,6 +3,7 @@ import {
   DefaultStyledButton,
   OutlineStyledButton,
   TextStyledButton,
+  IconButton,
 } from "./ButtonStyles";
 
 const Button = ({
@@ -43,11 +44,15 @@ const Button = ({
       color={default_colors[color] || color}
       size={size}
     >
-      {startIcon ? <span class="material-icons">{startIcon}</span> : null}
+      {startIcon ? (
+        <IconButton className="material-icons">{startIcon}</IconButton>
+      ) : null}
 
       {children}
 
-      {endIcon ? <span class="material-icons">{endIcon}</span> : null}
+      {endIcon ? (
+        <IconButton className="material-icons">{endIcon}</IconButton>
+      ) : null}
     </StyledButton>
   );
 };

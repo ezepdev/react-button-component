@@ -8,21 +8,26 @@ const sizes = {
 
 const default_color = {
   fg: "white",
-  hover_bg: "#191A19",
-  bg: "#929292",
+  hover_bg: "#222831",
+  bg: "#393E46",
   hover_fg: "white",
 };
+
+export const IconButton = styled.span`
+  margin: 0 10px;
+`;
 
 export const DefaultStyledButton = styled.button.attrs(({ disabled }) => {
   return { disabled };
 })`
-
+  display: flex;
   width: ${({ size = "md" }) => {
     return sizes[size];
   }};
   min-width: max-content;
-
-  color: ${({ color = default_color }) => color["fg"]}; 
+  justify-content: center;
+  align-items: center;
+  color: ${({ color = default_color }) => color["fg"]};
   background-color: ${({ color = default_color }) => color["bg"]};
   border: none;
   border-radius: 1rem;
@@ -45,18 +50,18 @@ export const OutlineStyledButton = styled(DefaultStyledButton)`
     return color["bg"];
   }};
   background-color: transparent;
-  border: 1px solid
+  border: 2px solid
     ${({ color = default_color }) => {
-    return color["bg"];
-  }};
+      return color["bg"];
+    }};
 
   &:not([disabled]):hover {
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid
-    ${({ color = default_color }) => {
-    return color["hover_bg"];
-  }};
+    border: 2px solid
+      ${({ color = default_color }) => {
+        return color["hover_bg"];
+      }};
     color: ${({ color = default_color }) => color["hover_bg"]};
   }
 `;
